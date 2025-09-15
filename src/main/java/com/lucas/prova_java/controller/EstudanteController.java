@@ -25,7 +25,7 @@ public class EstudanteController {
         return estudanteService.listarEstudantes();
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseEntity<String> deletarEstudante(@PathVariable Long id){
         return this.estudanteService.deletarEstudante(id);
     }
